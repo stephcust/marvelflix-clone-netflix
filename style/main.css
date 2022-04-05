@@ -18,6 +18,7 @@ body{
     font-family: 'Arial', Times, serif;
     color: white;
 }
+/*header*/
 .logo{
     display: flex;
     flex-direction: row;
@@ -55,10 +56,10 @@ header .container{
     flex-direction: row;
     justify-content: space-between;
 }
+/*elemento principal*/
 .container{
     margin-left: 3%;
 }
-/*elemento principal*/
 .filme-principal{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50),rgb(0, 0, 0)), url('https://www.themoviedb.org/t/p/original/tyQo080tijexyUHBvWPwQt26bZa.jpg');
@@ -82,9 +83,8 @@ header .container{
     font-size: 50px;
     font-family: 'Trebuchet MS', Arial, sans-serif
 }
-.nome-carrossel1{
-    margin-top: 12%;
-    margin-left: 3%;
+.filme-principal .container{
+    width: 60%;
 }
 .botao{
     background-color: rgba(0,0,0,50%);
@@ -104,9 +104,12 @@ header .container{
 .botao i{
     margin-right: 8px;
 }
-.filme-principal .container{
-    width: 60%;
+/*carrossel 1*/
+.nome-carrossel1{
+    margin-top: 12%;
+    margin-left: 3%;
 }
+
 .box-filme{
     height: 100%;
     width: 100%;
@@ -117,6 +120,7 @@ header .container{
     margin-bottom: 0;
     padding-bottom: 0;
 }
+/*trailer*/
 video{
     width: 100%;
 }
@@ -130,13 +134,12 @@ video{
     margin-top: 3%;
     position: absolute;
 }
+/*carrossel 2*/
 .nome-carrossel2{
     margin-left: 3%;    
     padding-bottom: 8px;
 }
-/* .carrossel-filmes .segundo{
-    margin-top: 10px;
-} */
+/*footer*/
 footer{
     border-top: 1.5px solid var(--c_claro);
     
