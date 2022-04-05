@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--Owl CSS-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+            <img class="img-logo" src="img/marvel-logo.png">
+            <h2 class="nome-logo">FLIX</h2>
+            </div>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">Homem-Aranha: Sem Volta Pra Casa</h3>
+                    <p class="descricao">Peter Parker é desmascarado e não consegue mais separar sua vida normal dos grandes riscos de ser um super-herói. Quando ele pede ajuda ao Doutor Estranho, os riscos se tornam ainda mais perigosos, e o forçam a descobrir o que realmente significa ser o Homem-Aranha.</p>
+                <div class="botoes">
+                    <button  role="button" class="botao"><i class="fa-solid fa-play"></i> ASSISTIR AGORA</button>
+                    <button  role="button" class="botao"><i class="fa-solid fa-circle-info"></i> MAIS INFORMAÇÕES</button>
+                </div>
+                <h3 class="nome-carrossel1">Universo Cinematográfico Marvel em Ordem Cronológica</h3>
+            </div>
+        </div>
+            
+    </main>
+
+    <div class="carrossel-filmes">
+        <div class="owl-carousel nonloop owl-theme">
+            <div classs="item">
+                <img class="box-filme" src="img/mini1.jpg">
+            </div>
+            <div classs="item">
+                <img class="box-filme" src="img/mini2.jpg">
+            </div>
+            <div classs="item">
+                <img class="box-filme" src="img/mini3.jpg">
+            </div>
+            <div classs="item">
+                <img class="box-filme" src="img/mini4.jpg">
+            </div>
+            <div classs="item">
+                <img class="box-filme" src="img/mini5.jpg">
+            </div>
+            <div classs="item">
+                <img class="box-filme" src="img/mini6.jpg">
+            </div>
+            <div classs="item">
+                <img class="box-filme" src="img/mini7.jpg">
+            </div>
+            <div classs="item">
+                <img class="box-filme" src="img/mini8.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="banner-trailer">
+        <h3 class="trailer-titulo">Assista Agora ao Trailer de Doutor Estranho no Multiverso da Loucura</h3>
+        <video id="video-trailer" loop>
+            <source src="video/doutorestranho-trailer.mp4"> 
+        </video>
+    </div>
+
+
+    <script>
+        var video = document.getElementById('video-trailer'), fraction = 0.8;
+
+function checkScroll() {
+    var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+    b = y + h, //bottom
+    visibleX, visibleY, visible;
+
+    visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+    visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+    visible = visibleX * visibleY / (w * h);
+
+    if (visible > fraction) {
+        video.play();
+    } else {
+        video.pause();
+    }
+}
+
+    checkScroll();
+    window.addEventListener('scroll', checkScroll, false);
+    window.addEventListener('resize', checkScroll, false);
+</script>
+
+    <!-- <script>
+        const observer = new IntersectionObserver(entry => {
+            console.log(entry);
+            entry.play();
+        });
+
+        observer.observe(document.getElementById('video-trailer'))
+    </script> -->
+
+
+
+    <script src="https://kit.fontawesome.com/fda1f90c49.js" crossorigin="anonymous"></script>
+
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+</body>
+</html>
