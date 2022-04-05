@@ -55,6 +55,9 @@ header .container{
     flex-direction: row;
     justify-content: space-between;
 }
+.container{
+    margin-left: 3%;
+}
 /*elemento principal*/
 .filme-principal{
     font-size: 16px;
@@ -80,7 +83,8 @@ header .container{
     font-family: 'Trebuchet MS', Arial, sans-serif
 }
 .nome-carrossel1{
-    margin-top: 23%;
+    margin-top: 12%;
+    margin-left: 3%;
 }
 .botao{
     background-color: rgba(0,0,0,50%);
@@ -99,9 +103,6 @@ header .container{
 }
 .botao i{
     margin-right: 8px;
-}
-.container{
-    margin-left: 30px;
 }
 .filme-principal .container{
     width: 60%;
@@ -122,9 +123,25 @@ video{
 .banner-trailer{
     margin-top: 0;
     padding-top: 0;
+    background-color: black;
 }
 .trailer-titulo{
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 3%;
+    margin-top: 3%;
     position: absolute;
+}
+.nome-carrossel2{
+    margin-left: 3%;    
+    padding-bottom: 8px;
+}
+/* .carrossel-filmes .segundo{
+    margin-top: 10px;
+} */
+footer{
+    border-top: 1.5px solid var(--c_claro);
+    
+}
+.meu-nome{
+    margin: 10px auto;
+    text-align: center;
 }
