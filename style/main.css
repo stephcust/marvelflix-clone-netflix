@@ -61,7 +61,7 @@ header .container{
 /*elemento principal*/
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgb(0, 0, 0)), url('/img/spiderman-banner2.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgb(0, 0, 0)), url('/img/spidermanbanner2.jpg');
     background-size: cover;
     background-position: right center;
     height: 650px;
